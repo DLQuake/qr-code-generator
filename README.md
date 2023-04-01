@@ -4,6 +4,9 @@ This is a web application built with React that generates QR codes for inputted 
 ## Available Scripts
 In the project directory, you can run:
 
+### npm install
+Installs the dependencies.
+
 ### npm start
 Runs the app in development mode.
 Open http://localhost:3000 to view it in your browser.
