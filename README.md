@@ -32,10 +32,6 @@ You can learn more about Create React App in the official documentation.
 
 To learn more about React, check out the React documentation.
 
-## Additional Features
-* The user can copy the generated QR code image to the clipboard using the "Copy Code" button.
-* The "Copy Code" button has been styled to have some space from the QR code image for better visual separation.
-
 Thank you for using our QR code generator!
 
 ## Download
