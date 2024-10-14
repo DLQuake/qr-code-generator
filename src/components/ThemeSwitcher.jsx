@@ -1,13 +1,16 @@
-// src/components/ThemeSwitcher.jsx
 import { useEffect, useState } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
-import './ThemeSwitcher.css';
+import '../styles/ThemeSwitcher.css';
 
 function ThemeSwitcher() {
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState(() => {
+        // Sprawdza localStorage na starcie aplikacji
+        return localStorage.getItem("theme") || "light";
+    });
 
     useEffect(() => {
         document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("theme", theme);
     }, [theme]);
 
     const toggleTheme = () => {
