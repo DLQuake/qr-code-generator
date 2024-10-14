@@ -1,4 +1,3 @@
-// src/App.jsx
 import { useState, useRef } from "react";
 import QRCodeForm from "./components/QRCodeForm";
 import QRCodeDisplay from "./components/QRCodeDisplay";
