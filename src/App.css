@@ -1,18 +1,57 @@
-.App {
-  margin: 2rem;
+html {
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-.field {
-  margin-bottom: 1.5rem;
+html[data-theme="light"] {
+  color: #000000;
 }
 
-.qr-code {
-  margin-top: 2rem;
-  text-align: center;
+html[data-theme="dark"] {
+  color: #ffffff;
 }
 
-.buttons {
-  margin-top: 1rem;
+.qr-code-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.qr-code-container canvas {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .qr-code-container {
+    width: 100%;
+  }
+
+  .qr-code-container canvas {
+    max-width: 90vw;
+    height: auto;
+  }
+}
+
+.color-input {
+  width: 100px;
+}
+
+.size-slider {
+  width: calc(100% - 50px);
+}
+
+.project-description {
+  margin-bottom: 2rem;
+}
+
+.project-description h2,
+.project-description h3 {
+  margin-bottom: 1rem;
+}
+
+.project-description ol {
+  margin-left: 2rem;
+  padding-left: 1rem;
 }
