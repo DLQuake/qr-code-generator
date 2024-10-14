@@ -4,7 +4,7 @@ import QRCodeForm from "./components/QRCodeForm";
 import QRCodeDisplay from "./components/QRCodeDisplay";
 import Footer from "./components/Footer";
 import "bulma/css/bulma.css";
-import "./App.css";
+import "./styles/App.css";
 import ProjectDescription from "./components/ProjectDescription";
 import ThemeSwitcher from "./components/ThemeSwitcher";
 
